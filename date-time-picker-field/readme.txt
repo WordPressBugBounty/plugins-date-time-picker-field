@@ -1,119 +1,143 @@
-=== Availability datepicker - Integrate with Contact Form 7 and Divi ===
-Contributors: inputwp, nirjhar_lo
+=== Availability Datepicker – Booking Calendar for Contact Form 7 – Input WP ===
+Contributors: inputwp
 Donate link: https://www.inputwp.com
-Tags: datepicker, date field, date time picker, date range, jquery ui
-Requires at least: 5.0
-Tested up to: 6.3.1
-Requires PHP: 5.6.2
-Stable tag: 2.3
+Tags: datepicker, booking, availability, calendar, contact form 7
+Requires at least: 6.0
+Tested up to: 6.9.1
+Requires PHP: 7.4
+Stable tag: 3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-The **Availability datepicker by InputWP** plugin allows you to convert manually or automatically a text input field into an advanced Date Picker. It works perfectly with Contact Form 7, Divi, Gravity Forms, Ninja Forms. Sync automatically external calendars (through .ics URL) to disable dates and times.
+**Availability datepicker** & **booking calendar** for any form. Configure **business hours**, time slots, date overrides and a **booking window**. Works with **Contact Form 7**.
 
 == Description ==
-**Availability datepicker** by [InputWP](https://www.inputwp.com/) is a plugin that allows you to convert text fields into a **Date Picker**, **Time Picker**, **Date and Time Picker** or a **Date Range Picker**, using a **CSS Selector**. It works with Contact Form 7, Divi, Ninja Forms and Gravity Forms. Define advanced rules for the dates and times available or disable the ones that are not needed.
 
-= Works well with Contact Form 7 and Divi =
+**Availability Datepicker** by [InputWP](https://www.inputwp.com/) is a **booking calendar** and **date time picker** plugin that turns any text field into a smart **availability datepicker**. Define your business hours, booking type, and availability rules — the **calendar** enforces them automatically on the frontend. Works with **Contact Form 7** via a simple CSS selector, with no code required on your end.
 
-Perfect for **appointments** or **booking forms** that need to follow certain **opening times** and **booking rules**, the Date and Time Picker plugin integrates well with **Contact Form 7** or **Divi** plugins through the CSS selector. Follow the rules for [Contact Form 7](https://www.inputwp.com/about/date-and-time-picker-field-on-contact-form-7/) or [Divi](https://www.inputwp.com/about/date-picker-in-divi-contact-form/).
+= Perfect For =
 
-= Upgrade for more =
+- **Doctor / Medical clinic** — Fixed 30-minute appointment slots, Monday–Friday, 24-hour minimum notice, 60-day booking window.
+- **Salon & Beauty** — Fixed 60-minute sessions, Monday–Saturday, 2-hour advance notice, 30-day booking window.
+- **Hotel / Vacation Rental** — Day Based mode, check-in and check-out date selection, minimum 2-night / maximum 30-night stay, 365-day booking window.
+- **Car Rental** — Flexible Range, pickup and return with date and time, 4-hour minimum / 7-day maximum, every day, 90-day booking window.
+- **Equipment Rental** — Flexible Range, overnight to multi-day rentals, 12–72-hour duration, 60-day booking window.
+- **Meeting Room** — Flexible 1–8-hour bookings, Monday–Friday, 15-minute buffers between slots, 30-day booking window.
+- **And anyone** who runs appointments, reservations, or rentals and needs to show live **availability** on their booking form.
 
-- **Multiple Events** (input fields)
-- **Date range** (type)
-- **Automatic integration** (no code required) with Contact Form 7, Gravity and Ninja Forms.
-- Fresh **new theme** for the date picker (dropdown)
-- Ability to **fully customize the theme** with the right **Colours** for typography and backgrounds, with the right **Font** and **Labels**.
-- **Sync with your external calendars** (like Google Calendar, Outlook, Airbnb, Booking.com, etc) so that you automatically disable the busy dates/hours.
+= Works with Contact Form 7 =
 
-Try out the [PRO version](https://www.inputwp.com) today. If you have a feature request, submit it from [here](https://www.inputwp.com/support/).
+**Availability Datepicker** integrates with **Contact Form 7** (and any other form plugin) through a CSS selector. Add a text field to your form, copy the CSS class from the Integration panel, and paste it into the field's class setting. No shortcodes or custom code needed.
+
+Follow the step-by-step guide for [Contact Form 7](https://www.inputwp.com/about/date-and-time-picker-field-on-contact-form-7/) or [Divi](https://www.inputwp.com/about/date-picker-in-divi-contact-form/) to connect your **date picker field** in minutes.
+
+= Three Booking Types =
+
+Choose the booking type that matches how your business operates:
+
+- **Fixed Time Slots** — Guests pick a specific time slot (e.g. 9:00 AM – 10:00 AM). Ideal for appointments, consultations, and classes. Uses a single **date and time** field.
+- **Day Based** — Guests pick a check-in date and a check-out date. Ideal for hotels, B&Bs, and vacation rentals. Uses two separate date fields.
+- **Flexible Range** — Guests pick a start date+time and an end date+time. Ideal for car and equipment rentals, meeting rooms, and multi-hour bookings. Uses two separate date+time fields.
+
+Six **Quick Setup Presets** let you pre-fill all availability settings for the most common scenarios in one click.
+
+= Advanced Availability Settings =
+
+The **availability calendar** is driven by a comprehensive set of rules you configure in the admin panel:
+
+- **Business Hours** — Enable or disable each weekday independently. Add multiple open time ranges per day to model morning and afternoon shifts.
+- **Availability Window** — Control how far ahead booking is open: dynamically (X days from today) or within a fixed predefined date range.
+- **Slot Interval** — Set the gap between available time slots: 15, 30, or 60 minutes.
+- **Minimum Notice** — Require a minimum lead time before a slot can be booked (e.g. 24 hours in advance).
+- **Buffers** — Add preparation or cleanup time before and after each slot to prevent back-to-back bookings.
+- **Min/Max Bookable Days** — Set the shortest and longest allowed stay lengths (Day Based mode).
+- **Min/Max Duration** — Set the shortest and longest allowed rental or booking period (Flexible Range mode).
+- **Blocked Dates** — Mark specific dates as unavailable: holidays, closures, one-off exceptions.
+- **Allowed Date Exceptions** — Open a normally-closed date with custom hours (e.g. a special Saturday opening).
+- **Live Admin Preview** — See how the calendar looks with your current settings before saving.
 
 = Features =
 
-- **Date picker** — Allow users to pick a date on the calendar.
-- **Time picker** — It allows users to choose the time next to the date picker calendar.
-- **Multiple date time picker themes** — Keep it Light (default) or keep it Dark.
-- **Inline** — Keep your date calendar and time picker inline.
-- **Multiple Language Support** — Create a date and time picker field with a calendar for 42 different languages.
-- **Keep Placeholder** — It allows you to keep the original placeholder of the input field. Or, display the current date or next available time.
-- **Prevent Keyboard Edit** — It enables you to allow or prevent users from making edits in date and time using the keyboard.
-- **Disable Past Dates** — It allows you to hide past dates from the current date on the date picker calendar. If today is 11th Sep, then it won’t show 10th Sep, 09th Sep, and so on.
-- **Time Step** — Define time intervals in a minute for the time picker. If you set 60, then the time picker will show time choices as 12:00 AM, 01:00 AM, and so on.
-- **Minimum Time** — It allows you to define time in a slot from where a user can start choosing time.
-- **Maximum Time** — It allows you to define the time that would be regarded as the last time in a slot a user can choose from the time picker.
-- **Offset for available times** — Using this option, you can offset time from Now to the next available time. If right now it’s 03:15 PM, and you choose to offset 45 minutes, then the next available time would be 04:00 PM.
-- **Minimum Date** — Define the starting date for the date slot. Users will not be able to select the previous date from the defined minimum date.
-- **Maximum Date** — Define the last date for the date slot. Users will not be able to select the future date from the defined maximum date.
-- **Date Format** — Provides you with 15 different date formats to select for your date picker.
-- **Hour format** — Multiple hour formats for the time picker.
-- **When to Load** — Choose when and where to load the date time picker fields. Whether across the full website, for admin panel, full website including the admin panel, or only when the date time picker shortcode is available on a page.
-- **Disable Week Days** — Don’t want to receive bookings or reservation forms on certain days of the week? Worry not, using this option you can easily disable the days by merely checking the box next to the week name.
-- **Disable Specific Dates** — Taking a vacation or don’t want to receive forms on certain dates? Simply input dates in the Disable Specific Dates field of the Advanced settings to hide dates from the calendar.
-- **Default list of allowed times** — It enables you to provide users with a list of allowed times to choose from in the time picker for different days.
+- **Date picker** — Allow users to pick a date on the availability calendar.
+- **Time picker** — Let users choose an available time alongside the date.
+- **Three built-in themes** — Light, and Dark.
+- **Multiple language support** — Display the datepicker interface in 40+ languages.
+- **Date formats** — Choose from 15+ date format options (d/m/Y, Y-m-d, M j Y, and more).
+- **Time format** — 12-hour (AM/PM) or 24-hour display.
+- **Timezone** — Configure the timezone your availability rules are based on.
+- **Inline display** — Keep the calendar always visible on the page instead of opening as a dropdown.
+- **Quick Setup Presets** — Six pre-configured templates (Doctor, Salon, Hotel, Car Rental, Equipment Rental, Meeting Room) to get started in seconds.
 
-= Who can make the most out of the Date and Time Picker plugin? =
+= Upgrade to PRO =
 
-Well, there’s no such limit for whom this plugin is designed; however, there are some business
-industries that can take more benefits than others:
+PRO unlocks (as shown on the Support page in the admin):
 
-- Hotel, restaurant or cafe that allows booking or reservation.
-- Hospitals or clinics.
-- Salon or parlour.
-- Mayors and government personnel for official meetings.
-- Businesses that offer fun activities, games and tours.
-- And anyone who wants to allow users to submit forms to book, reserve, and meet.
+- **Bookings** — Capture, manage, and block slots automatically so dates are disabled once booked.
+- **Multiple Resources** — Custom availability rules per resource or form field.
+- **Branding & dynamic styling** — Full control over calendar colors, fonts, and labels.
+- **Import from .ics** — Sync Google Calendar, Outlook, and other calendar services to block busy dates.
+- **Divi & WooCommerce integration** — Native integration with Divi and WooCommerce.
 
-= Seamless support =
-
-It’s a free plugin, but the [support](https://wordpress.org/support/plugin/date-time-picker-field/) you’ll get would be not less than a premium user. Whether the
-plugin is not working on your site, or you’d want something specific out of it, you can always
-look for the tremendous support , and get your issue resolved.
-
-If you got some [features requests](https://www.inputwp.com/support/) in mind, let us know.
+Try the [PRO version](https://www.inputwp.com) today. Have a feature request? [Let us know](https://www.inputwp.com/support/).
 
 == Frequently Asked Questions ==
 
-= Can I have more than one date time picker field on my site? =
+= Does the plugin record bookings or prevent the same slot from being selected twice? =
 
-Yes, you can have multiple fields, however, with the free version, every field would have the same rules. If you choose to get the PRO version, then you can have different rules for different pickers.
+No. The plugin controls which dates and times appear as selectable in the datepicker. It does not store form submissions or automatically remove a time slot after someone books it — your form plugin (Contact Form 7, etc.) handles submissions independently. To block a date after it has been taken, add it manually to the Blocked Dates list. For automated booking management and double-booking prevention, a dedicated booking plugin is needed alongside this one.
 
-= Is it necessary to have a contact form plugin(CF7 / Divi) on my site? =
+= Do I need two separate form fields for check-in / check-out or start / end time? =
 
-Our plugin workday only through integration with other plugins like Contact Form 7, Divi, Ninja Forms, Gravity Forms.
+Yes, for Day Based and Flexible Range booking types. Each requires two text fields in your form (one for the start, one for the end), each configured with its own CSS selector in the Integration panel. Fixed Time Slots uses a single date+time field.
 
-= How do I prevent the DateTime Picker scripts and styles from loading across all my website? =
+= Can different forms on the same site have different availability rules? =
 
-In the settings page for the plugin you can find the option to load the necessary files only when the shortcode [datetimepicker] exists on the page.
-If you have this option selected, the plugin will only look for fields to convert when this shortcode exists on that page.
+The free version applies one set of availability rules to all forms site-wide. If you need different rules for different forms or fields — for example, two services with different business hours — independent rule sets per field are available in the PRO version.
 
-= I’ve installed the plugin, but not able to get it to work? =
+= How do I connect the datepicker to my Contact Form 7 field? =
 
-If you’re wondering how to start using this plugin, you should check out our [documentation](https://www.inputwp.com/features/). Still facing issues? Reach out to us on our [support forum](https://wordpress.org/support/plugin/date-time-picker-field).
-If you have purchased the premium version, then get support from [here](https://www.inputwp.com/support/).
+Add a plain text input to your CF7 form, then copy its CSS class or ID into the CSS Selector field in the Integration panel. The full step-by-step guide is available at [inputwp.com](https://www.inputwp.com/about/date-and-time-picker-field-on-contact-form-7/). For other form builders, the same approach applies — use the field's CSS class or ID as the selector.
 
+= The datepicker is not appearing on my page — what should I check? =
 
-= How do I add specific times for different days? For example, for weekends? =
+Two things to check first: (1) the CSS selector in the Integration panel must exactly match the field's CSS class or ID — a single character difference will prevent the datepicker from attaching; (2) open the browser console for JavaScript errors that may indicate a conflict with another plugin or theme. Still stuck? Visit the [support forum](https://wordpress.org/support/plugin/date-time-picker-field/).
 
-In the settings page for the plugin you can find a 'Advanced Settings' tab were you'll find some options to set available times for each day. You'll need to individually set each time available as default, for example '09:00,09:30,09:50,10:50,11:30' and then override this default values for each day you need. It will not work well if you don't setup a default list of allowed times. The list of times still needs to be inside the minimum and maximum times set in the 'Basic Settings' tab.
+= Can I automatically sync Google Calendar or an external calendar to block booked dates? =
 
-= Does it work with any theme? =
+ICS calendar sync — the ability to connect a `.ics` URL from Google Calendar, Outlook, Airbnb, Booking.com, or any other calendar service to automatically disable dates that are already taken — is available in the [PRO version](https://www.inputwp.com).
 
-Yes, it works fine with any of your favourite themes.
+= I was using v2.x — will my settings carry over? =
 
-= Should I keep the Basic plugin and the PRO plugin active? =
+Settings are automatically migrated to the v3.0 format on first activation. As with any major upgrade, backing up your site beforehand is always recommended.
 
-When you install the PRO plugin, it will automatically import your input created from the Base plugin without the need to have the Based plugin activated so it can be uninstalled.
+== Installation ==
 
+1. Upload the plugin files to the `/wp-content/plugins/date-time-picker-field` directory, or install the plugin directly through the WordPress plugins screen.
+2. Activate the plugin through the **Plugins** screen in WordPress.
+3. Go to **Availability → Availability** and configure your booking type, business hours, and availability rules.
+4. Go to **Availability → Integration**, copy the CSS selector, and add it to the corresponding text field in your form.
 
 == Screenshots ==
 
-1. Details
-2. Date Picker
-3. Time Picker
-4. Integration
+1. Availability — Configure booking type, business hours, and availability window.
+2. Quick Setup Presets — Pre-fill all settings for common booking scenarios in one click.
+3. Advanced time settings — Slot interval, minimum notice, buffers, and min/max duration.
+4. Integration — Copy the CSS selector and paste it into your form field.
+5. Settings — Configure date format, time format, timezone, and datepicker library options.
 
 == Changelog ==
+
+= v3.0 - 27 February 2026 =
+- New: Three booking types — Fixed Time Slots, Day Based, Flexible Range
+- New: Six Quick Setup Presets (Doctor/Medical, Salon & Beauty, Hotel/Vacation Rental, Car Rental, Equipment Rental, Meeting Room)
+- New: Availability Window — dynamic or predefined date range
+- New: Date Overrides — block specific dates or add exceptions with custom hours
+- New: Advanced time settings — minimum notice, slot buffers, min/max stay or duration
+- Enhancement: Rebuilt admin UI with live calendar preview
+- Enhancement: Settings API architecture (no custom database tables)
+- Enhancement: Automatic migration of settings from v2.x
+- Requires: WordPress 6.0+, PHP 7.4+
+- Tested: Compatibility with WordPress 6.9.1
 
 = v2.3 - September 7, 2023 =
 - Fix Freemius vulnerability by updating to v2.5.10
@@ -194,10 +218,6 @@ When you install the PRO plugin, it will automatically import your input created
 * Enhancement: Option to disable specific dates
 * Enhancement: Improved time handling - it will now consider the site timezone
 
-= v.1.7.6 =
-* Enhancement: Option to disable specific dates
-* Enhancement: Improved time handling - it will now consider the site timezone
-
 = v.1.7.5 =
 * Enhancement: Improved default time value
 * Enhancement: New option to set time offset for current day
@@ -253,4 +273,3 @@ When you install the PRO plugin, it will automatically import your input created
 
 == Credits ==
 * [xdsoft.net datetimepicker jQuery plugin](https://xdsoft.net/jqplugins/datetimepicker/)
-* [Moment JavaScript date library](https://momentjs.com/)
